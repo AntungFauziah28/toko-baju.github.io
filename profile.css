@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* CSS reset agar website kita bisa berjalan di semua website */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+  h1{
+    float: left;
+    padding-left: 40px;
+    color: #CD5C5C;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+  }
+
+  h1 a{
+    text-decoration: none;
+    color: inherit;
+  }
+/* navbar */
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #D8BFD8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+/* Logo image */
+.logo img {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    padding: 10px 0;
+    /* padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+/* nav-items */
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 40px; */
+    margin-right: 20px;
+    padding: 10px;
+    
+
+  }
+  .nav-items ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .nav-items li {
+    margin-right: 10px;
+}
+  .nav-items-menu {
+    display: flex;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    /* width: 120px; */
+    font-size: 16px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+  .nav-items-menu:last-child {
+    margin-right: 0; /* menghapus margin pada elemen terakhir */
+  }
+
+  .no-wrap {
+    white-space: nowrap;
+  }
+  .nav-items-menu:hover,
+  .active  {
+    color: #fff;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .active a{
+    color: #fff;
+  }
+
+  /* label */
+  .label {
+    background-color: brown;
+    padding: 20px;
+    color: white;
+    text-align: start;
+    height: 80px;
+    margin: 0 auto;
+    line-height: 80px; /* menyesuaikan nilai line-height dengan nilai height */
+    }
+
+
+  /* our profile*/
+  section h3{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 0;
+    /* color: black; */
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .profile{
+    /* word-spacing: 2px;
+    line-height: 25px; 
+    background-color: #FFE4E1;
+    margin-bottom: 20px; */
+    background-color: #F5F5F5;
+    /* padding: 50px 0; */
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .profile h4{
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .profile li{
+    list-style-type: decimal;
+  }
+
+  .profile p {
+    text-align: justify;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    /* max-width: 1200px; */
+    /* width: 1200px; */
+    text-align: justify;
+}
+
+  .profile ul {
+    list-style: disc;
+    margin-left: 40px;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+/* footer */
+footer {
+    padding: 30px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-revou {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+  }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Second-Antung Fauziah</title>
+    <link rel="stylesheet" href="message.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="header">
+            <h1><a href="index.html"> 3Second</a></h1>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li ><a class="nav-items-menu" href="index.html">Home</a></li>
+                <li><a class="nav-items-menu no-wrap" href="profile.html">Our Profile</a></li>
+                <li><a class="nav-items-menu no-wrap" href="model.html">Model Baju</a></li>
+                <li class="active"><a class="nav-items-menu no-wrap" href="message.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+   <!-- label -->
+   <section class="label">
+    <div class="container">
+        <p>Home / Contact</p>
+    </div>
+</section>
+
+    <!-- Contact Us -->
+    <section class="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+        </div>
+            <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" rows="5" id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      
+        <div id="contact-info">
+          <h3>Your Information:</h3>
+          <p>Name: <span id="name-info"></span></p>
+          <p>Email: <span id="email-info"></span></p>
+          <p>Message: <span id="message-info"></span></p>
+        </div>
+    </section>
+    
+        <!-- footer -->
+        <footer>
+            <div class="container-footer">
+                <img src="assets/logo-revou.png" alt="logo-revou" class="logo-revou">
+                <small>Copyright &copy; 2022 - Antung Fauziah. All Rights Reserved </small>
+            </div>
+        </footer>
+       
+      <script>
+        const form = document.getElementById('contact-form');
+        const nameInfo = document.getElementById('name-info');
+        const emailInfo = document.getElementById('email-info');
+        const messageInfo = document.getElementById('message-info');
+
+        form.addEventListener('submit', (event) => {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+    
+                nameInfo.textContent = name;
+                emailInfo.textContent = email;
+                messageInfo.textContent = message;
+    event.preventDefault();
+});
+      </script>
+</body>
+</html>
